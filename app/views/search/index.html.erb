@@ -1,7 +1,7 @@
 <%= flash[:success] if flash[:success] %>
 <br>
 <br>
-<% @representatives_sorted.each do |representative| %>
+<% @representatives.each do |representative| %>
   <div class="house-member">
     <span class="name">Name: <%= representative["name"] %></span><br>
     <span class="role">Role: <%= representative["role"] %></span><br>
