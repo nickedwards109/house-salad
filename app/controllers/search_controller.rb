@@ -8,5 +8,6 @@ class SearchController < ApplicationController
       representative["seniority"].to_i
     end
     @representatives_sorted = representatives_backwards_sorted.reverse
+    flash[:success] = "#{@representatives_sorted.count} results"
   end
 end
