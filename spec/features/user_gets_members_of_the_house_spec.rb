@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "User gets members of the house" do
   scenario "user gets all 7 members of the Colorado House of Representatives" do
     visit root_path
-    select "Colorado", from: "search-field"
+    select "Colorado", from: "state"
     click_on "Locate Members of the House"
 
     expect(page).to have_current_path(search_path(state: "CO"))
