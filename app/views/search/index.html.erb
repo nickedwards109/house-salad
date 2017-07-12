@@ -3,10 +3,10 @@
 <br>
 <% @representatives.each do |representative| %>
   <div class="house-member">
-    <span class="name">Name: <%= representative["name"] %></span><br>
-    <span class="role">Role: <%= representative["role"] %></span><br>
-    <span class="party">Party: <%= representative["party"] %></span><br>
-    <span class="district">District: <%= representative["district"] %></span><br>
+    <span class="name">Name: <%= representative.name %></span><br>
+    <span class="role">Role: <%= representative.role %></span><br>
+    <span class="party">Party: <%= representative.party %></span><br>
+    <span class="district">District: <%= representative.district %></span><br>
     <br>
   </div>
 <% end %>

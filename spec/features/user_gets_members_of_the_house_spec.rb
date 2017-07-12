@@ -13,7 +13,5 @@ RSpec.describe "User gets members of the house" do
     expect(page).to have_selector(".role", count: 7)
     expect(page).to have_selector(".party", count: 7)
     expect(page).to have_selector(".district", count: 7)
-
-    # still need to make a unit test to verify that results are ordered by seniority from most to least
   end
 end
